@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'open-sans';
+    src:url('opensansregular.woff') format('woff'),
+        url('opensansregular.svg#open-sans') format('svg'),
+        url('opensansregular.eot'),
+        url('opensansregular.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open-sans';
+    src:url('open-sans-semibold.ttf.woff') format('woff'),
+        url('open-sans-semibold.ttf.svg#open-sans-semibold') format('svg'),
+        url('open-sans-semibold.ttf.eot'),
+        url('open-sans-semibold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src:url('open-sans-bold.ttf.woff') format('woff'),
+        url('open-sans-bold.ttf.svg#open-sans-bold') format('svg'),
+        url('open-sans-bold.ttf.eot'),
+        url('open-sans-bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 700;
+    font-style: normal;
+}
+body{ 
+   font-family: 'open-sans';
+}

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'roboto';
+    src:url('roboto-regular.ttf.woff') format('woff'),
+        url('roboto-regular.ttf.svg#roboto-regular') format('svg'),
+        url('roboto-regular.ttf.eot'),
+        url('roboto-regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src:url('roboto-medium.ttf.woff') format('woff'),
+        url('roboto-medium.ttf.svg#roboto-medium') format('svg'),
+        url('roboto-medium.ttf.eot'),
+        url('roboto-medium.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src:url('roboto-bold.ttf.woff') format('woff'),
+        url('roboto-bold.ttf.svg#roboto-bold') format('svg'),
+        url('roboto-bold.ttf.eot'),
+        url('roboto-bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 700;
+    font-style: normal;
+}
+body{ 
+   font-family: 'roboto';
+}

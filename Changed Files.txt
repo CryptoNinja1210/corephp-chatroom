@@ -1,0 +1,80 @@
+*database 
+
+users table add new 3 coloums 
+ALTER TABLE `gr_users` ADD `credits` INT NOT NULL DEFAULT '0' AFTER `extra`, ADD `subs` INT NOT NULL DEFAULT '0' AFTER `credits`, ADD `subs_end` INT NOT NULL DEFAULT '0' AFTER `subs`;
+
+created 5 new table
+
+
+
+
+
+*knob/chat.php
+
+<script src="<?php gec($GLOBALS["default"]->weburl) ?>gem/mine/grupomine.js"></script>
+after add
+<script src="<?php gec($GLOBALS["default"]->weburl) ?>extra/addons.js?t=<?php echo time();?>"></script>
+
+
+
+*gem/mine/grupomine.js
+$('.swr-grupo .panel').attr('ldt', e.attr('ldt'));
+after add
+if ($('#send_gift').length) {
+   if ($('.swr-grupo .panel').attr('ldt')=='user') {
+    $('#send_gift').show();
+    } else {
+        $('#send_gift').hide();
+    } 
+}
+
+--
+
+msg = msg+'<i>';
+after
+if (m.msg.indexOf('#GIFT') == 0) {
+    var datas = m.msg.split(' ');
+    if (moset=='right'){
+        if (datas[1]!='credit')
+        msg = msg+'<span class="preview image gifs lrmbg"><span style="margin-top: 0;">You sent a gift('+datas[2]+' credits) </br><img class="lazyimg tenor" gif="'+home_url+'extra/gifts/'+datas[1]+'" data-src="'+home_url+'extra/gifts/'+datas[1]+'" style="height:100px;"/></span></span>';
+        else {
+            msg = msg+'<span>You sent <img src="'+home_url+'extra/assets/img/coin_icon.png" style="height: 18px;"> credits ('+datas[2]+' credits)</span></br>';
+        }
+    }
+    else{
+        if (datas[1]!='credit')
+            msg = msg+'<span class="preview image gifs lrmbg"><span style="margin-top: 0;">Receive a Gift('+datas[2]+' credits) </br><img class="lazyimg tenor" gif="'+home_url+'extra/gifts/'+datas[1]+'" data-src="'+home_url+'extra/gifts/'+datas[1]+'" style="height:100px;"/></span></span>';
+        else {
+            msg = msg+'<span>Received credits <img src="'+home_url+'extra/assets/img/coin_icon.png" style="height: 18px;"> ('+datas[2]+' credits)</span></br>';
+        }
+    }
+    msg = msg+mntz;
+    m.type = 'stickers';
+}
+
+----
+
+if (m.lntitle != 0) {
+change with 
+if (m.lntitle != 0 && m.msg.indexOf('#GIFT') !== 0) {
+
+---
+
+} else if (m.type === 'gifs' || m.type === 'stickers') {
+change with
+} else if ((m.type === 'gifs' || m.type === 'stickers') && m.msg.indexOf('#GIFT') == -1) {
+---
+
+
+**door/grform/load.php
+edit for paid channel 
+
+**door/gredit/load.php
+edit for paid channel 
+
+**door/grlist/load.php
+edit for paid channel
+
+**door/grcreate/load.php
+edit for paid channel
+

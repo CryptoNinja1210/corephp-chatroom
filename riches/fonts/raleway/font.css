@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'raleway';
+    src:url('raleway-medium.ttf.woff') format('woff'),
+        url('raleway-medium.ttf.svg#raleway-medium') format('svg'),
+        url('raleway-medium.ttf.eot'),
+        url('raleway-medium.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway';
+    src:url('raleway-semibold.ttf.woff') format('woff'),
+        url('raleway-semibold.ttf.svg#raleway-semibold') format('svg'),
+        url('raleway-semibold.ttf.eot'),
+        url('raleway-semibold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src:url('raleway-bold.ttf.woff') format('woff'),
+        url('raleway-bold.ttf.svg#raleway-bold') format('svg'),
+        url('raleway-bold.ttf.eot'),
+        url('raleway-bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 700;
+    font-style: normal;
+}
+body{ 
+   font-family: 'raleway';
+}

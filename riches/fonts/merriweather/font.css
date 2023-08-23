@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Merriweather';
+    src:url('merriweather.ttf.woff') format('woff'),
+        url('merriweather.ttf.svg#merriweather') format('svg'),
+        url('merriweather.ttf.eot'),
+        url('merriweather.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src:url('merriweather-bold.ttf.woff') format('woff'),
+        url('merriweather-bold.ttf.svg#merriweather-bold') format('svg'),
+        url('merriweather-bold.ttf.eot'),
+        url('merriweather-bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 700;
+    font-style: normal;
+}
+body{ 
+   font-family: 'Merriweather';
+}

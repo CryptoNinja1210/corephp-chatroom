@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Noto-Serif';
+    src:url('noto-serif.ttf.woff') format('woff'),
+        url('noto-serif.ttf.svg#noto-serif') format('svg'),
+        url('noto-serif.ttf.eot'),
+        url('noto-serif.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto-Serif';
+    src:url('noto-serif-bold.ttf.woff') format('woff'),
+        url('noto-serif-bold.ttf.svg#noto-serif-bold') format('svg'),
+        url('noto-serif-bold.ttf.eot'),
+        url('noto-serif-bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 700;
+    font-style: normal;
+}
+body{ 
+   font-family: 'Noto-Serif';
+}

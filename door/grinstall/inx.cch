@@ -1,0 +1,105 @@
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `gr_alerts`
+--
+ALTER TABLE `gr_alerts`
+
+  ADD KEY `idx__uid` (`uid`),
+  ADD KEY `idx__uid_seen` (`uid`,`seen`);
+
+--
+-- Indexes for table `gr_complaints`
+--
+ALTER TABLE `gr_complaints`
+
+  ADD KEY `idx__gid_id` (`gid`,`id`),
+  ADD KEY `idx__status_gid` (`status`,`gid`);
+
+
+--
+-- Indexes for table `gr_logs`
+--
+ALTER TABLE `gr_logs`
+
+  ADD KEY `idx__v1_type_v2` (`v1`,`type`,`v2`),
+  ADD KEY `idx__v1_type_tms` (`v1`,`type`,`tms`);
+
+--
+-- Indexes for table `gr_msgs`
+--
+ALTER TABLE `gr_msgs`
+
+  ADD KEY `idx__gid_id` (`gid`,`id`),
+  ADD KEY `idx__gid_type` (`gid`,`type`),
+  ADD KEY `idx__xtra_type` (`xtra`,`type`),
+  ADD KEY `idx__uid_type` (`uid`,`type`),
+  ADD KEY `idx__gid_cat_id` (`gid`,`cat`,`id`),
+  ADD KEY `idx__id_gid_type` (`id`,`gid`,`type`),
+  ADD KEY `idx__gid_cat_type_xtra` (`gid`,`cat`,`type`,`xtra`),
+  ADD KEY `idx__msg_gid_uid_type` (`msg`(191),`gid`,`uid`,`type`);
+
+--
+-- Indexes for table `gr_options`
+--
+ALTER TABLE `gr_options`
+
+  ADD KEY `idx__v3_v1_type` (`v3`,`v1`,`type`),
+  ADD KEY `idx__v2_v1_type` (`v2`,`v1`,`type`),
+  ADD KEY `idx__type_id_tms` (`type`,`id`,`tms`),
+  ADD KEY `idx__v1_type` (`v1`,`type`),
+  ADD KEY `idx__v2_type` (`v2`,`type`),
+  ADD KEY `idx__v1_type_v3` (`v1`,`type`,`v3`),
+  ADD KEY `idx__v1_type_v2` (`v1`,`type`,`v2`),
+  ADD KEY `idx__v1_type_v2_id` (`v1`,`type`,`v2`,`id`),
+  ADD KEY `idx__type_v3` (`type`,`v3`),
+  ADD KEY `idx__v3_v1_v2_type` (`v3`,`v1`(50),`v2`(50),`type`);
+
+--
+-- Indexes for table `gr_permissions`
+--
+ALTER TABLE `gr_permissions`
+
+  ADD KEY `idx__name` (`name`);
+
+--
+-- Indexes for table `gr_phrases`
+--
+ALTER TABLE `gr_phrases`
+
+  ADD KEY `idx__type_short` (`type`,`short`),
+  ADD KEY `idx__lid_type` (`lid`,`type`);
+
+--
+-- Indexes for table `gr_profiles`
+--
+ALTER TABLE `gr_profiles`
+
+  ADD KEY `idx__type_id` (`type`,`id`),
+  ADD KEY `idx__uid_type` (`uid`,`type`);
+
+--
+-- Indexes for table `gr_session`
+--
+ALTER TABLE `gr_session`
+
+  ADD KEY `idx__code_device` (`code`,`device`);
+
+--
+-- Indexes for table `gr_users`
+--
+ALTER TABLE `gr_users`
+  ADD KEY `idx__role` (`role`);
+
+--
+-- Indexes for table `gr_utrack`
+--
+ALTER TABLE `gr_utrack`
+
+  ADD KEY `idx__uid_ip` (`uid`,`ip`),
+  ADD KEY `idx__uid_tms` (`uid`,`tms`),
+  ADD KEY `idx__ip_dev_uid` (`ip`,`dev`,`uid`) USING BTREE,
+  ADD KEY `idx__uid_ip_dev` (`uid`,`ip`,`dev`),
+  ADD KEY `idx__uid_ip_dev_tms` (`uid`,`ip`,`dev`,`tms`);

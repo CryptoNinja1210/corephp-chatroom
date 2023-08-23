@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Domine';
+    src:url('domine.ttf.woff') format('woff'),
+        url('domine.ttf.svg#domine') format('svg'),
+        url('domine.ttf.eot'),
+        url('domine.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Domine';
+    src:url('domine-bold.ttf.woff') format('woff'),
+        url('domine-bold.ttf.svg#domine-bold') format('svg'),
+        url('domine-bold.ttf.eot'),
+        url('domine-bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 700;
+    font-style: normal;
+}
+body{ 
+   font-family: 'Domine';
+}

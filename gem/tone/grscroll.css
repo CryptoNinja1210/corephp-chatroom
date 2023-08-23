@@ -1,0 +1,96 @@
+body.light *
+{
+scrollbar-width: thin;
+}
+
+body.light *::-webkit-scrollbar
+{
+width: 13px;
+}
+
+body.light *::-webkit-scrollbar-track
+{
+background: #f8f9fa;
+}
+
+body.light *::-webkit-scrollbar-thumb
+{
+background-color: #d2d2d2;
+border-radius: 20px;
+border: 3px solid #f8f9fa;
+}
+
+body.light .swr-menu::-webkit-scrollbar,
+body.dark .swr-menu::-webkit-scrollbar,
+body.dark .grupo-pop > div > form > div::-webkit-scrollbar,
+body.light .grupo-pop > div > form > div::-webkit-scrollbar
+{
+width: 8px;
+}
+
+body.light .swr-menu::-webkit-scrollbar-thumb,
+body.dark .swr-menu::-webkit-scrollbar-thumb,
+body.dark .grupo-pop > div > form > div::-webkit-scrollbar-thumb,
+body.light .grupo-pop > div > form > div::-webkit-scrollbar-thumb
+{
+border: 0px solid #f8f9fa;
+}
+
+body.light .swr-menu::-webkit-scrollbar-track,
+body.dark .swr-menu::-webkit-scrollbar-track,
+body.dark .grupo-pop > div > form > div::-webkit-scrollbar-track,
+body.light .grupo-pop > div > form > div::-webkit-scrollbar-track
+{
+background: transparent;
+}
+
+body.dark *
+{
+scrollbar-width: thin;
+scrollbar-color: #3f3f3f #191B1E;
+}
+
+body.dark *::-webkit-scrollbar
+{
+width: 13px;
+}
+
+body.dark *::-webkit-scrollbar-track
+{
+background: #191b1e;
+}
+
+body.dark *::-webkit-scrollbar-thumb
+{
+background-color: #3b3d3f;
+border-radius: 20px;
+border: 3px solid #191b1e;
+}
+
+body.dark .grupo-pop > div > form > div::-webkit-scrollbar-thumb
+{
+background-color: #6b6b6b;
+}
+
+
+body.sign.bgone,body.sign.bgone *
+{
+scrollbar-width: thin;
+}
+
+body.sign.bgone::-webkit-scrollbar,body.sign.bgone *::-webkit-scrollbar
+{
+width: 13px;
+}
+
+body.sign.bgone::-webkit-scrollbar-track,body.sign.bgone *::-webkit-scrollbar-track
+{
+background: #f8f9fa;
+}
+
+body.sign.bgone::-webkit-scrollbar-thumb,body.sign.bgone *::-webkit-scrollbar-thumb
+{
+background-color: #d2d2d2;
+border-radius: 20px;
+border: 3px solid #f8f9fa;
+}
